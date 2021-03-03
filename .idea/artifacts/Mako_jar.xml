@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Mako:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Mako_jar</output-path>
+    <root id="archive" name="Mako.jar">
+      <element id="module-output" name="Mako" />
+      <element id="extracted-dir" path="$USER_HOME$/javaExternalLib/jcommander-1.78.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/javaExternalLib/commons-math3-3.6.1/commons-math3-3.6.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/javaExternalLib/htsjdk/build/libs/htsjdk-2.13.2-4-g80122b9-SNAPSHOT.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

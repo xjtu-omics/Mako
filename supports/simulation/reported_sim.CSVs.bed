@@ -1,0 +1,300 @@
+chr1	358292	370355	inverted tandem duplication;tandem duplication;deletion;inversion	<inverted tandem duplication,358292,362011><tandem duplication,362012,364619><deletion,364620,368599><inversion,368600,370355>
+chr1	2567659	2574559	translocation copy-paste	<translocation copy-paste,SORC:2567659-2572873,DEST:2574559,reverse>
+chr1	3223215	3231051	inversion;deletion;tandem duplication	<inversion,3223215,3224981><deletion,3224982,3228808><tandem duplication,3228809,3231051>
+chr1	4270695	4278704	inverted tandem duplication;inversion;deletion	<inverted tandem duplication,4270695,4273451><inversion,4273452,4278070><deletion,4278071,4278704>
+chr1	4453626	4461576	translocation copy-paste	<translocation copy-paste,SORC:4453626-4457805,DEST:4461576,forward>
+chr1	4791703	4793792	inverted tandem duplication;deletion	<inverted tandem duplication,4791703,4792010><deletion,4792011,4793792>
+chr1	5173586	5177325	tandem duplication;deletion;inverted tandem duplication;inversion	<tandem duplication,5173586,5173885><deletion,5173886,5176346><inverted tandem duplication,5176347,5176822><inversion,5176823,5177325>
+chr1	5279746	5288562	translocation copy-paste	<translocation copy-paste,SORC:5279746-5283780,DEST:5288562,reverse>
+chr1	5828808	5843890	tandem duplication;deletion;inversion;inverted tandem duplication	<tandem duplication,5828808,5833323><deletion,5833324,5838183><inversion,5838184,5840573><inverted tandem duplication,5840574,5843890>
+chr1	7539007	7556664	translocation copy-paste	<translocation copy-paste,SORC:7539007-7542069,DEST:7556664,forward>
+chr1	8590052	8594987	deletion;tandem duplication	<deletion,8590052,8594427><tandem duplication,8594428,8594987>
+chr1	9247757	9255759	tandem duplication;inversion	<tandem duplication,9247757,9250480><inversion,9250481,9255759>
+chr1	12394582	12398149	inverted tandem duplication	<inverted tandem duplication,12394582,12398149>
+chr1	15585638	15592326	inversion;deletion	<inversion,15585638,15588891><deletion,15588892,15592326>
+chr1	15942447	15948474	inverted tandem duplication;deletion;tandem duplication	<inverted tandem duplication,15942447,15943794><deletion,15943795,15947713><tandem duplication,15947714,15948474>
+chr1	16649888	16657336	deletion;inverted tandem duplication	<deletion,16649888,16653713><inverted tandem duplication,16653714,16657336>
+chr1	17705766	17716095	tandem duplication;deletion;inverted tandem duplication;inversion	<tandem duplication,17705766,17707022><deletion,17707023,17711268><inverted tandem duplication,17711269,17712673><inversion,17712674,17716095>
+chr1	17803521	17809075	deletion;inversion	<deletion,17803521,17803988><inversion,17803989,17809075>
+chr1	19785788	19790494	deletion;tandem duplication	<deletion,19785788,19788731><tandem duplication,19788732,19790494>
+chr1	19827048	19840902	inversion;deletion;inverted tandem duplication;tandem duplication	<inversion,19827048,19831275><deletion,19831276,19835608><inverted tandem duplication,19835609,19836796><tandem duplication,19836797,19840902>
+chr1	20115292	20120099	inverted tandem duplication;inversion	<inverted tandem duplication,20115292,20115503><inversion,20115504,20120099>
+chr1	20168339	20180144	inverted tandem duplication;deletion;inversion	<inverted tandem duplication,20168339,20172124><deletion,20172125,20176687><inversion,20176688,20180144>
+chr1	20980151	20983893	tandem duplication;deletion;inversion	<tandem duplication,20980151,20981272><deletion,20981273,20983397><inversion,20983398,20983893>
+chr1	21160106	21166652	inverted tandem duplication;inversion;deletion	<inverted tandem duplication,21160106,21160900><inversion,21160901,21165066><deletion,21165067,21166652>
+chr1	21961759	21971891	deletion;inversion	<deletion,21961759,21966743><inversion,21966744,21971891>
+chr1	22712801	22715665	tandem duplication	<tandem duplication,22712801,22715665>
+chr1	23030932	23046138	inverted tandem duplication;deletion;tandem duplication;inversion	<inverted tandem duplication,23030932,23034355><deletion,23034356,23039746><tandem duplication,23039747,23042232><inversion,23042233,23046138>
+chr1	23270556	23277613	deletion;tandem duplication	<deletion,23270556,23274820><tandem duplication,23274821,23277613>
+chr1	23669695	23674354	inverted tandem duplication;deletion;tandem duplication	<inverted tandem duplication,23669695,23670000><deletion,23670001,23673440><tandem duplication,23673441,23674354>
+chr1	25090544	25094294	inversion;deletion	<inversion,25090544,25091304><deletion,25091305,25094294>
+chr1	25506097	25510734	inverted tandem duplication	<inverted tandem duplication,25506097,25510734>
+chr1	26283770	26294816	inverted tandem duplication;tandem duplication;inversion;deletion	<inverted tandem duplication,26283770,26284731><tandem duplication,26284732,26287090><inversion,26287091,26292148><deletion,26292149,26294816>
+chr1	28146471	28165080	translocation copy-paste	<translocation copy-paste,SORC:28146471-28150783,DEST:28165080,forward>
+chr1	28374227	28385186	inversion;inverted tandem duplication;deletion;tandem duplication	<inversion,28374227,28377828><inverted tandem duplication,28377829,28379495><deletion,28379496,28383408><tandem duplication,28383409,28385186>
+chr1	30010260	30013448	translocation copy-paste	<translocation copy-paste,SORC:30010260-30013157,DEST:30013448,reverse>
+chr1	30518102	30525713	inverted tandem duplication;tandem duplication;deletion;inversion	<inverted tandem duplication,30518102,30519917><tandem duplication,30519918,30521348><deletion,30521349,30525367><inversion,30525368,30525713>
+chr1	31467378	31470666	tandem duplication	<tandem duplication,31467378,31470666>
+chr1	32487424	32492508	inversion;deletion	<inversion,32487424,32488938><deletion,32488939,32492508>
+chr1	32548375	32551889	inverted tandem duplication;deletion;tandem duplication	<inverted tandem duplication,32548375,32549207><deletion,32549208,32550980><tandem duplication,32550981,32551889>
+chr1	32940907	32946656	inverted tandem duplication	<inverted tandem duplication,32940907,32946656>
+chr1	33184877	33200087	tandem duplication;inversion;deletion;inverted tandem duplication	<tandem duplication,33184877,33186162><inversion,33186163,33190370><deletion,33190371,33195352><inverted tandem duplication,33195353,33200087>
+chr1	34368967	34378721	tandem duplication;inverted tandem duplication;inversion;deletion	<tandem duplication,34368967,34369501><inverted tandem duplication,34369502,34372257><inversion,34372258,34376077><deletion,34376078,34378721>
+chr1	35965741	35969717	tandem duplication;deletion;inverted tandem duplication	<tandem duplication,35965741,35965852><deletion,35965853,35969224><inverted tandem duplication,35969225,35969717>
+chr1	36158267	36162578	inverted tandem duplication	<inverted tandem duplication,36158267,36162578>
+chr1	36344421	36355372	inversion;deletion;tandem duplication	<inversion,36344421,36346742><deletion,36346743,36351487><tandem duplication,36351488,36355372>
+chr1	37652420	37663674	inverted tandem duplication;tandem duplication;inversion;deletion	<inverted tandem duplication,37652420,37655239><tandem duplication,37655240,37655904><inversion,37655905,37660054><deletion,37660055,37663674>
+chr1	37964831	37972482	deletion;inversion;inverted tandem duplication	<deletion,37964831,37967934><inversion,37967935,37971945><inverted tandem duplication,37971946,37972482>
+chr1	38088651	38094100	tandem duplication	<tandem duplication,38088651,38094100>
+chr1	40540906	40544561	inverted tandem duplication;deletion	<inverted tandem duplication,40540906,40541609><deletion,40541610,40544561>
+chr1	42650441	42659031	translocation copy-paste	<translocation copy-paste,SORC:42650441-42654758,DEST:42659031,forward>
+chr1	43129251	43137214	inverted tandem duplication;deletion;tandem duplication	<inverted tandem duplication,43129251,43130197><deletion,43130198,43135399><tandem duplication,43135400,43137214>
+chr1	44024505	44036795	inversion;deletion;tandem duplication	<inversion,44024505,44028295><deletion,44028296,44033236><tandem duplication,44033237,44036795>
+chr1	46642228	46653305	inverted tandem duplication;inversion;deletion;tandem duplication	<inverted tandem duplication,46642228,46643353><inversion,46643354,46646712><deletion,46646713,46651745><tandem duplication,46651746,46653305>
+chr1	47663483	47674264	inverted tandem duplication;tandem duplication;deletion;inversion	<inverted tandem duplication,47663483,47665085><tandem duplication,47665086,47667446><deletion,47667447,47670882><inversion,47670883,47674264>
+chr1	48366179	48386374	translocation copy-paste	<translocation copy-paste,SORC:48366179-48368897,DEST:48386374,forward>
+chr1	48750883	48757681	inversion;tandem duplication	<inversion,48750883,48754515><tandem duplication,48754516,48757681>
+chr1	49001585	49013190	inverted tandem duplication;inversion;deletion;tandem duplication	<inverted tandem duplication,49001585,49004560><inversion,49004561,49006759><deletion,49006760,49010354><tandem duplication,49010355,49013190>
+chr1	51748709	51760450	inversion;tandem duplication;deletion;inverted tandem duplication	<inversion,51748709,51751774><tandem duplication,51751775,51752958><deletion,51752959,51757248><inverted tandem duplication,51757249,51760450>
+chr1	52077802	52085276	inversion;deletion	<inversion,52077802,52081947><deletion,52081948,52085276>
+chr1	52126650	52135495	deletion;inversion;tandem duplication	<deletion,52126650,52128629><inversion,52128630,52132557><tandem duplication,52132558,52135495>
+chr1	52624179	52630686	deletion;inversion;tandem duplication	<deletion,52624179,52624702><inversion,52624703,52629093><tandem duplication,52629094,52630686>
+chr1	53795931	53800062	tandem duplication	<tandem duplication,53795931,53800062>
+chr1	54081542	54098362	translocation copy-paste	<translocation copy-paste,SORC:54081542-54085220,DEST:54098362,reverse>
+chr1	55105172	55112035	tandem duplication;inversion;inverted tandem duplication	<tandem duplication,55105172,55105851><inversion,55105852,55110025><inverted tandem duplication,55110026,55112035>
+chr1	55214295	55227579	translocation copy-paste	<translocation copy-paste,SORC:55214295-55216694,DEST:55227579,forward>
+chr1	56524584	56534798	tandem duplication;inversion;inverted tandem duplication;deletion	<tandem duplication,56524584,56528418><inversion,56528419,56532297><inverted tandem duplication,56532298,56533157><deletion,56533158,56534798>
+chr1	57591701	57600927	inverted tandem duplication;inversion;tandem duplication	<inverted tandem duplication,57591701,57593601><inversion,57593602,57597533><tandem duplication,57597534,57600927>
+chr1	59473655	59488197	inverted tandem duplication;deletion;tandem duplication	<inverted tandem duplication,59473655,59477619><deletion,59477620,59483738><tandem duplication,59483739,59488197>
+chr1	60396213	60402019	inverted tandem duplication;inversion;tandem duplication;deletion	<inverted tandem duplication,60396213,60396714><inversion,60396715,60399927><tandem duplication,60399928,60401459><deletion,60401460,60402019>
+chr1	60664872	60670615	inverted tandem duplication;inversion	<inverted tandem duplication,60664872,60666922><inversion,60666923,60670615>
+chr1	62700307	62708103	inverted tandem duplication;inversion;deletion;tandem duplication	<inverted tandem duplication,62700307,62701848><inversion,62701849,62706008><deletion,62706009,62707842><tandem duplication,62707843,62708103>
+chr1	63494528	63506280	inversion;tandem duplication;deletion;inverted tandem duplication	<inversion,63494528,63496690><tandem duplication,63496691,63498722><deletion,63498723,63502971><inverted tandem duplication,63502972,63506280>
+chr1	63840835	63855283	deletion;inversion;inverted tandem duplication	<deletion,63840835,63845133><inversion,63845134,63850492><inverted tandem duplication,63850493,63855283>
+chr1	64580142	64588120	inverted tandem duplication;tandem duplication;deletion;inversion	<inverted tandem duplication,64580142,64580308><tandem duplication,64580309,64583116><deletion,64583117,64586238><inversion,64586239,64588120>
+chr1	64715403	64728464	deletion;inversion;tandem duplication	<deletion,64715403,64719418><inversion,64719419,64724187><tandem duplication,64724188,64728464>
+chr1	65262786	65269211	inversion;inverted tandem duplication	<inversion,65262786,65267177><inverted tandem duplication,65267178,65269211>
+chr1	66091226	66100762	tandem duplication;inverted tandem duplication;deletion;inversion	<tandem duplication,66091226,66093768><inverted tandem duplication,66093769,66095556><deletion,66095557,66098268><inversion,66098269,66100762>
+chr1	68414526	68424838	tandem duplication;deletion;inverted tandem duplication	<tandem duplication,68414526,68415630><deletion,68415631,68421122><inverted tandem duplication,68421123,68424838>
+chr1	68431750	68436171	inverted tandem duplication;deletion	<inverted tandem duplication,68431750,68431911><deletion,68431912,68436171>
+chr1	68721479	68736098	translocation copy-paste	<translocation copy-paste,SORC:68736098-68740900,DEST:68721479,reverse>
+chr1	69510743	69522075	deletion;tandem duplication;inversion;inverted tandem duplication	<deletion,69510743,69513275><tandem duplication,69513276,69516797><inversion,69516798,69521100><inverted tandem duplication,69521101,69522075>
+chr1	70247952	70254001	inverted tandem duplication;inversion;tandem duplication	<inverted tandem duplication,70247952,70249884><inversion,70249885,70253843><tandem duplication,70253844,70254001>
+chr1	72009516	72017351	translocation copy-paste	<translocation copy-paste,SORC:72009516-72013947,DEST:72017351,forward>
+chr1	72360209	72367696	inverted tandem duplication;deletion;inversion;tandem duplication	<inverted tandem duplication,72360209,72361451><deletion,72361452,72365574><inversion,72365575,72365834><tandem duplication,72365835,72367696>
+chr1	73588349	73604349	tandem duplication;inversion;inverted tandem duplication;deletion	<tandem duplication,73588349,73591111><inversion,73591112,73595779><inverted tandem duplication,73595780,73599889><deletion,73599890,73604349>
+chr1	73635269	73638693	inverted tandem duplication	<inverted tandem duplication,73635269,73638693>
+chr1	75094950	75107014	tandem duplication;inverted tandem duplication;inversion;deletion	<tandem duplication,75094950,75097809><inverted tandem duplication,75097810,75100250><inversion,75100251,75104689><deletion,75104690,75107014>
+chr1	75676235	75681791	tandem duplication	<tandem duplication,75676235,75681791>
+chr1	76721165	76728432	inverted tandem duplication;inversion;tandem duplication	<inverted tandem duplication,76721165,76723914><inversion,76723915,76727422><tandem duplication,76727423,76728432>
+chr1	76784091	76788748	tandem duplication	<tandem duplication,76784091,76788748>
+chr1	76877589	76886955	tandem duplication;inversion;deletion;inverted tandem duplication	<tandem duplication,76877589,76877808><inversion,76877809,76881610><deletion,76881611,76884217><inverted tandem duplication,76884218,76886955>
+chr1	77249588	77252777	inverted tandem duplication	<inverted tandem duplication,77249588,77252777>
+chr1	78028267	78031486	tandem duplication	<tandem duplication,78028267,78031486>
+chr1	79090287	79096833	inversion;deletion;inverted tandem duplication	<inversion,79090287,79092317><deletion,79092318,79095986><inverted tandem duplication,79095987,79096833>
+chr1	79601869	79609118	inversion;inverted tandem duplication	<inversion,79601869,79605869><inverted tandem duplication,79605870,79609118>
+chr1	79914076	79928994	translocation copy-paste	<translocation copy-paste,SORC:79914076-79918697,DEST:79928994,reverse>
+chr1	80340887	80345706	deletion;tandem duplication	<deletion,80340887,80343901><tandem duplication,80343902,80345706>
+chr1	80554951	80563161	translocation copy-paste	<translocation copy-paste,SORC:80554951-80558372,DEST:80563161,reverse>
+chr1	81105294	81112382	translocation copy-paste	<translocation copy-paste,SORC:81105294-81109384,DEST:81112382,forward>
+chr1	81960170	81969591	tandem duplication;inversion;deletion	<tandem duplication,81960170,81960871><inversion,81960872,81966417><deletion,81966418,81969591>
+chr1	82391827	82398808	inversion;tandem duplication	<inversion,82391827,82395380><tandem duplication,82395381,82398808>
+chr1	83193677	83206148	deletion;inverted tandem duplication;inversion;tandem duplication	<deletion,83193677,83197238><inverted tandem duplication,83197239,83199471><inversion,83199472,83204046><tandem duplication,83204047,83206148>
+chr1	85111331	85117493	inverted tandem duplication;inversion;tandem duplication	<inverted tandem duplication,85111331,85112247><inversion,85112248,85117064><tandem duplication,85117065,85117493>
+chr1	87118690	87129132	inverted tandem duplication;inversion;tandem duplication	<inverted tandem duplication,87118690,87122095><inversion,87122096,87126036><tandem duplication,87126037,87129132>
+chr1	87844380	87851753	inversion;deletion;inverted tandem duplication	<inversion,87844380,87845080><deletion,87845081,87848913><inverted tandem duplication,87848914,87851753>
+chr1	88754009	88767362	tandem duplication;inversion;inverted tandem duplication	<tandem duplication,88754009,88755255><inversion,88755256,88761368><inverted tandem duplication,88761369,88767362>
+chr1	88944584	88952087	translocation copy-paste	<translocation copy-paste,SORC:88952087-88957586,DEST:88944584,forward>
+chr1	89845671	89860949	translocation copy-paste	<translocation copy-paste,SORC:89845671-89847454,DEST:89860949,reverse>
+chr1	90323192	90331126	deletion;inverted tandem duplication;inversion;tandem duplication	<deletion,90323192,90326316><inverted tandem duplication,90326317,90327032><inversion,90327033,90330214><tandem duplication,90330215,90331126>
+chr1	90393716	90401989	tandem duplication;inversion;inverted tandem duplication	<tandem duplication,90393716,90395292><inversion,90395293,90400867><inverted tandem duplication,90400868,90401989>
+chr1	92080515	92088058	inversion;deletion;tandem duplication	<inversion,92080515,92083636><deletion,92083637,92087850><tandem duplication,92087851,92088058>
+chr1	92434051	92442230	tandem duplication;inversion	<tandem duplication,92434051,92436834><inversion,92436835,92442230>
+chr1	92584262	92591102	tandem duplication;inversion;deletion	<tandem duplication,92584262,92585326><inversion,92585327,92588551><deletion,92588552,92591102>
+chr1	93927097	93940189	deletion;inversion;tandem duplication	<deletion,93927097,93930562><inversion,93930563,93935582><tandem duplication,93935583,93940189>
+chr1	94211030	94221393	tandem duplication;inversion;deletion;inverted tandem duplication	<tandem duplication,94211030,94212427><inversion,94212428,94216859><deletion,94216860,94220370><inverted tandem duplication,94220371,94221393>
+chr1	94355469	94363771	inversion;deletion	<inversion,94355469,94360510><deletion,94360511,94363771>
+chr1	96625373	96628725	inverted tandem duplication	<inverted tandem duplication,96625373,96628725>
+chr1	97194027	97199935	inverted tandem duplication	<inverted tandem duplication,97194027,97199935>
+chr1	97376003	97377849	inverted tandem duplication	<inverted tandem duplication,97376003,97377849>
+chr1	97902137	97909627	inversion;deletion	<inversion,97902137,97906164><deletion,97906165,97909627>
+chr1	98209576	98216615	deletion;inversion	<deletion,98209576,98213860><inversion,98213861,98216615>
+chr1	98886255	98899263	translocation copy-paste	<translocation copy-paste,SORC:98899263-98902482,DEST:98886255,forward>
+chr1	99650526	99673306	translocation copy-paste	<translocation copy-paste,SORC:99650526-99653485,DEST:99673306,reverse>
+chr1	99684992	99695926	deletion;inversion;inverted tandem duplication	<deletion,99684992,99688189><inversion,99688190,99693062><inverted tandem duplication,99693063,99695926>
+chr1	102468808	102477964	tandem duplication;inversion	<tandem duplication,102468808,102472661><inversion,102472662,102477964>
+chr1	102945672	102954527	inverted tandem duplication;deletion;tandem duplication;inversion	<inverted tandem duplication,102945672,102946889><deletion,102946890,102950020><tandem duplication,102950021,102951487><inversion,102951488,102954527>
+chr1	104012911	104023024	inverted tandem duplication;inversion;deletion;tandem duplication	<inverted tandem duplication,104012911,104013900><inversion,104013901,104018671><deletion,104018672,104021771><tandem duplication,104021772,104023024>
+chr1	105124403	105132204	inverted tandem duplication;tandem duplication;inversion;deletion	<inverted tandem duplication,105124403,105124751><tandem duplication,105124752,105126024><inversion,105126025,105129358><deletion,105129359,105132204>
+chr1	105891509	105900780	tandem duplication;inversion	<tandem duplication,105891509,105895231><inversion,105895232,105900780>
+chr1	106859814	106873760	translocation copy-paste	<translocation copy-paste,SORC:106859814-106865536,DEST:106873760,reverse>
+chr1	107218446	107225649	deletion;inverted tandem duplication	<deletion,107218446,107222591><inverted tandem duplication,107222592,107225649>
+chr1	107534983	107540588	inverted tandem duplication;inversion	<inverted tandem duplication,107534983,107536960><inversion,107536961,107540588>
+chr1	108353390	108364997	tandem duplication;deletion;inversion;inverted tandem duplication	<tandem duplication,108353390,108354861><deletion,108354862,108359546><inversion,108359547,108361371><inverted tandem duplication,108361372,108364997>
+chr1	108926225	108935395	tandem duplication;inversion;deletion	<tandem duplication,108926225,108929278><inversion,108929279,108933615><deletion,108933616,108935395>
+chr1	109147865	109159961	inverted tandem duplication;tandem duplication;inversion;deletion	<inverted tandem duplication,109147865,109150462><tandem duplication,109150463,109154676><inversion,109154677,109159092><deletion,109159093,109159961>
+chr1	109910730	109918193	inverted tandem duplication;inversion;deletion	<inverted tandem duplication,109910730,109912887><inversion,109912888,109915947><deletion,109915948,109918193>
+chr1	110174189	110179106	inverted tandem duplication	<inverted tandem duplication,110174189,110179106>
+chr1	110179905	110190610	inversion;tandem duplication;deletion;inverted tandem duplication	<inversion,110179905,110183619><tandem duplication,110183620,110184446><deletion,110184447,110189500><inverted tandem duplication,110189501,110190610>
+chr1	111105202	111110005	deletion;inversion	<deletion,111105202,111106815><inversion,111106816,111110005>
+chr1	112268114	112284224	translocation copy-paste	<translocation copy-paste,SORC:112284224-112287376,DEST:112268114,reverse>
+chr1	112520516	112527013	inverted tandem duplication;inversion;tandem duplication	<inverted tandem duplication,112520516,112521575><inversion,112521576,112524519><tandem duplication,112524520,112527013>
+chr1	113462794	113472372	deletion;inversion;tandem duplication	<deletion,113462794,113465523><inversion,113465524,113469278><tandem duplication,113469279,113472372>
+chr1	114419723	114423756	inverted tandem duplication	<inverted tandem duplication,114419723,114423756>
+chr1	114574921	114578069	tandem duplication	<tandem duplication,114574921,114578069>
+chr1	116842221	116853196	tandem duplication;deletion;inversion;inverted tandem duplication	<tandem duplication,116842221,116844559><deletion,116844560,116846304><inversion,116846305,116850640><inverted tandem duplication,116850641,116853196>
+chr1	117773514	117781749	inversion;tandem duplication	<inversion,117773514,117779448><tandem duplication,117779449,117781749>
+chr1	119471111	119483001	tandem duplication;deletion;inversion;inverted tandem duplication	<tandem duplication,119471111,119474906><deletion,119474907,119478935><inversion,119478936,119480395><inverted tandem duplication,119480396,119483001>
+chr1	119689826	119694369	inverted tandem duplication	<inverted tandem duplication,119689826,119694369>
+chr1	120428553	120432320	inverted tandem duplication	<inverted tandem duplication,120428553,120432320>
+chr1	121424555	121428142	inversion;deletion	<inversion,121424555,121425890><deletion,121425891,121428142>
+chr1	121436683	121445840	inversion;tandem duplication;deletion;inverted tandem duplication	<inversion,121436683,121438174><tandem duplication,121438175,121440073><deletion,121440074,121443051><inverted tandem duplication,121443052,121445840>
+chr1	121915366	121923870	tandem duplication;deletion;inversion;inverted tandem duplication	<tandem duplication,121915366,121917057><deletion,121917058,121919644><inversion,121919645,121922388><inverted tandem duplication,121922389,121923870>
+chr1	143254050	143259801	deletion;inversion	<deletion,143254050,143255885><inversion,143255886,143259801>
+chr1	143591796	143597535	deletion;inversion	<deletion,143591796,143596387><inversion,143596388,143597535>
+chr1	144690817	144695513	inverted tandem duplication	<inverted tandem duplication,144690817,144695513>
+chr1	144984526	144997061	translocation copy-paste	<translocation copy-paste,SORC:144984526-144987302,DEST:144997061,reverse>
+chr1	146224613	146228566	inverted tandem duplication	<inverted tandem duplication,146224613,146228566>
+chr1	147007668	147029802	translocation copy-paste	<translocation copy-paste,SORC:147007668-147010646,DEST:147029802,forward>
+chr1	147506474	147511941	inverted tandem duplication	<inverted tandem duplication,147506474,147511941>
+chr1	148574991	148578962	tandem duplication	<tandem duplication,148574991,148578962>
+chr1	148929615	148935135	inversion;deletion;inverted tandem duplication	<inversion,148929615,148930101><deletion,148930102,148933216><inverted tandem duplication,148933217,148935135>
+chr1	150434420	150444358	deletion;tandem duplication	<deletion,150434420,150439566><tandem duplication,150439567,150444358>
+chr1	150529139	150535686	tandem duplication;inversion;deletion	<tandem duplication,150529139,150530842><inversion,150530843,150533631><deletion,150533632,150535686>
+chr1	150700664	150710644	deletion;inversion;inverted tandem duplication;tandem duplication	<deletion,150700664,150703260><inversion,150703261,150707006><inverted tandem duplication,150707007,150708081><tandem duplication,150708082,150710644>
+chr1	151535953	151544515	tandem duplication;deletion;inversion	<tandem duplication,151535953,151539458><deletion,151539459,151543236><inversion,151543237,151544515>
+chr1	151692694	151699029	inverted tandem duplication;tandem duplication;inversion;deletion	<inverted tandem duplication,151692694,151692899><tandem duplication,151692900,151694152><inversion,151694153,151696780><deletion,151696781,151699029>
+chr1	151957674	151965116	inverted tandem duplication;inversion;deletion	<inverted tandem duplication,151957674,151959039><inversion,151959040,151962755><deletion,151962756,151965116>
+chr1	152410774	152415008	deletion;inverted tandem duplication	<deletion,152410774,152414378><inverted tandem duplication,152414379,152415008>
+chr1	152677423	152681141	inverted tandem duplication;inversion	<inverted tandem duplication,152677423,152677838><inversion,152677839,152681141>
+chr1	152734888	152740005	inverted tandem duplication;inversion;tandem duplication;deletion	<inverted tandem duplication,152734888,152735580><inversion,152735581,152737567><tandem duplication,152737568,152739353><deletion,152739354,152740005>
+chr1	153167130	153176108	tandem duplication;inversion;inverted tandem duplication	<tandem duplication,153167130,153168438><inversion,153168439,153172677><inverted tandem duplication,153172678,153176108>
+chr1	153330087	153335177	tandem duplication;inversion	<tandem duplication,153330087,153332243><inversion,153332244,153335177>
+chr1	153620104	153633307	deletion;tandem duplication;inversion;inverted tandem duplication	<deletion,153620104,153624128><tandem duplication,153624129,153627980><inversion,153627981,153632815><inverted tandem duplication,153632816,153633307>
+chr1	155266297	155270469	inverted tandem duplication	<inverted tandem duplication,155266297,155270469>
+chr1	155480512	155487311	inverted tandem duplication;deletion	<inverted tandem duplication,155480512,155483626><deletion,155483627,155487311>
+chr1	156979570	156987910	deletion;inversion;inverted tandem duplication	<deletion,156979570,156980727><inversion,156980728,156985701><inverted tandem duplication,156985702,156987910>
+chr1	157790837	157798661	inverted tandem duplication;tandem duplication;deletion;inversion	<inverted tandem duplication,157790837,157792854><tandem duplication,157792855,157794820><deletion,157794821,157797482><inversion,157797483,157798661>
+chr1	158814837	158825205	inversion;deletion;tandem duplication	<inversion,158814837,158816199><deletion,158816200,158820791><tandem duplication,158820792,158825205>
+chr1	160018031	160022705	deletion;inversion	<deletion,160018031,160021508><inversion,160021509,160022705>
+chr1	161530595	161535398	inversion;tandem duplication	<inversion,161530595,161533744><tandem duplication,161533745,161535398>
+chr1	162066744	162073059	deletion;tandem duplication	<deletion,162066744,162071710><tandem duplication,162071711,162073059>
+chr1	162794189	162804786	inversion;deletion;tandem duplication;inverted tandem duplication	<inversion,162794189,162795083><deletion,162795084,162798886><tandem duplication,162798887,162801422><inverted tandem duplication,162801423,162804786>
+chr1	164508673	164512733	tandem duplication	<tandem duplication,164508673,164512733>
+chr1	165072097	165080853	translocation copy-paste	<translocation copy-paste,SORC:165080853-165085550,DEST:165072097,forward>
+chr1	166713458	166727898	translocation copy-paste	<translocation copy-paste,SORC:166713458-166718462,DEST:166727898,forward>
+chr1	167680689	167685512	deletion;inverted tandem duplication	<deletion,167680689,167683522><inverted tandem duplication,167683523,167685512>
+chr1	168046744	168053665	inverted tandem duplication;inversion;tandem duplication	<inverted tandem duplication,168046744,168048917><inversion,168048918,168052986><tandem duplication,168052987,168053665>
+chr1	169252749	169260909	tandem duplication;inversion;deletion	<tandem duplication,169252749,169255712><inversion,169255713,169259052><deletion,169259053,169260909>
+chr1	169467099	169479893	inverted tandem duplication;tandem duplication;deletion;inversion	<inverted tandem duplication,169467099,169471122><tandem duplication,169471123,169472417><deletion,169472418,169476575><inversion,169476576,169479893>
+chr1	169594218	169602925	inversion;deletion;tandem duplication	<inversion,169594218,169596334><deletion,169596335,169600584><tandem duplication,169600585,169602925>
+chr1	170614140	170623375	deletion;inverted tandem duplication;inversion;tandem duplication	<deletion,170614140,170614315><inverted tandem duplication,170614316,170616950><inversion,170616951,170620173><tandem duplication,170620174,170623375>
+chr1	171099976	171107550	inverted tandem duplication;inversion;tandem duplication;deletion	<inverted tandem duplication,171099976,171102343><inversion,171102344,171105967><tandem duplication,171105968,171106140><deletion,171106141,171107550>
+chr1	171348276	171351570	inversion;deletion	<inversion,171348276,171349323><deletion,171349324,171351570>
+chr1	172087563	172097547	inverted tandem duplication;deletion;tandem duplication	<inverted tandem duplication,172087563,172088494><deletion,172088495,172094972><tandem duplication,172094973,172097547>
+chr1	172890322	172901083	inverted tandem duplication;inversion;deletion;tandem duplication	<inverted tandem duplication,172890322,172892354><inversion,172892355,172896004><deletion,172896005,172899602><tandem duplication,172899603,172901083>
+chr1	173207556	173221036	tandem duplication;deletion;inversion;inverted tandem duplication	<tandem duplication,173207556,173210297><deletion,173210298,173213873><inversion,173213874,173218248><inverted tandem duplication,173218249,173221036>
+chr1	173957590	173964255	tandem duplication;inverted tandem duplication;inversion;deletion	<tandem duplication,173957590,173957764><inverted tandem duplication,173957765,173959554><inversion,173959555,173963509><deletion,173963510,173964255>
+chr1	174872956	174883636	tandem duplication;inverted tandem duplication;inversion;deletion	<tandem duplication,174872956,174875146><inverted tandem duplication,174875147,174876488><inversion,174876489,174880376><deletion,174880377,174883636>
+chr1	175158567	175164148	inverted tandem duplication;inversion;tandem duplication	<inverted tandem duplication,175158567,175159576><inversion,175159577,175162761><tandem duplication,175162762,175164148>
+chr1	175454090	175458605	inverted tandem duplication	<inverted tandem duplication,175454090,175458605>
+chr1	175681872	175699175	translocation copy-paste	<translocation copy-paste,SORC:175699175-175702583,DEST:175681872,reverse>
+chr1	175784071	175787926	deletion;inversion	<deletion,175784071,175787777><inversion,175787778,175787926>
+chr1	177663180	177672030	tandem duplication;deletion;inversion;inverted tandem duplication	<tandem duplication,177663180,177663552><deletion,177663553,177667033><inversion,177667034,177668634><inverted tandem duplication,177668635,177672030>
+chr1	178158734	178165319	inversion;tandem duplication;deletion;inverted tandem duplication	<inversion,178158734,178158978><tandem duplication,178158979,178161081><deletion,178161082,178164330><inverted tandem duplication,178164331,178165319>
+chr1	178385429	178391926	inversion;deletion;tandem duplication	<inversion,178385429,178385727><deletion,178385728,178391160><tandem duplication,178391161,178391926>
+chr1	179366758	179367953	inverted tandem duplication	<inverted tandem duplication,179366758,179367953>
+chr1	180625251	180634317	deletion;inverted tandem duplication	<deletion,180625251,180630433><inverted tandem duplication,180630434,180634317>
+chr1	180797995	180807022	deletion;inversion;inverted tandem duplication	<deletion,180797995,180799598><inversion,180799599,180803657><inverted tandem duplication,180803658,180807022>
+chr1	181298826	181309697	tandem duplication;deletion;inverted tandem duplication;inversion	<tandem duplication,181298826,181300949><deletion,181300950,181304862><inverted tandem duplication,181304863,181306189><inversion,181306190,181309697>
+chr1	181698942	181704156	deletion;tandem duplication	<deletion,181698942,181702989><tandem duplication,181702990,181704156>
+chr1	183270423	183273594	inverted tandem duplication	<inverted tandem duplication,183270423,183273594>
+chr1	183554501	183563367	inversion;deletion	<inversion,183554501,183557489><deletion,183557490,183563367>
+chr1	184272253	184278580	translocation copy-paste	<translocation copy-paste,SORC:184278580-184281020,DEST:184272253,forward>
+chr1	185838625	185844109	translocation copy-paste	<translocation copy-paste,SORC:185844109-185848829,DEST:185838625,reverse>
+chr1	186176895	186181502	tandem duplication	<tandem duplication,186176895,186181502>
+chr1	186298491	186311454	translocation copy-paste	<translocation copy-paste,SORC:186311454-186315352,DEST:186298491,forward>
+chr1	187502911	187508891	inversion;inverted tandem duplication	<inversion,187502911,187506990><inverted tandem duplication,187506991,187508891>
+chr1	187629588	187634089	inverted tandem duplication	<inverted tandem duplication,187629588,187634089>
+chr1	187680880	187688293	inverted tandem duplication;deletion	<inverted tandem duplication,187680880,187683307><deletion,187683308,187688293>
+chr1	188375220	188383674	translocation copy-paste	<translocation copy-paste,SORC:188375220-188379410,DEST:188383674,reverse>
+chr1	189448338	189468545	translocation copy-paste	<translocation copy-paste,SORC:189448338-189450827,DEST:189468545,forward>
+chr1	190147220	190151558	tandem duplication	<tandem duplication,190147220,190151558>
+chr1	190855427	190866607	inversion;deletion;inverted tandem duplication	<inversion,190855427,190858123><deletion,190858124,190862720><inverted tandem duplication,190862721,190866607>
+chr1	191172656	191183234	deletion;inversion;inverted tandem duplication	<deletion,191172656,191175714><inversion,191175715,191180657><inverted tandem duplication,191180658,191183234>
+chr1	191969610	191980938	inversion;deletion;inverted tandem duplication;tandem duplication	<inversion,191969610,191972585><deletion,191972586,191976754><inverted tandem duplication,191976755,191977051><tandem duplication,191977052,191980938>
+chr1	192310833	192314571	inverted tandem duplication	<inverted tandem duplication,192310833,192314571>
+chr1	192703540	192713202	inverted tandem duplication;inversion;tandem duplication	<inverted tandem duplication,192703540,192707097><inversion,192707098,192710895><tandem duplication,192710896,192713202>
+chr1	192830882	192839976	inverted tandem duplication;inversion;tandem duplication	<inverted tandem duplication,192830882,192832621><inversion,192832622,192837038><tandem duplication,192837039,192839976>
+chr1	193092503	193100387	inversion;deletion	<inversion,193092503,193096706><deletion,193096707,193100387>
+chr1	193259328	193269965	inverted tandem duplication;inversion;deletion;tandem duplication	<inverted tandem duplication,193259328,193261718><inversion,193261719,193263055><deletion,193263056,193267412><tandem duplication,193267413,193269965>
+chr1	194314575	194323725	translocation copy-paste	<translocation copy-paste,SORC:194314575-194320162,DEST:194323725,forward>
+chr1	194326133	194334845	deletion;inversion	<deletion,194326133,194331036><inversion,194331037,194334845>
+chr1	194954110	194964961	tandem duplication;deletion;inverted tandem duplication	<tandem duplication,194954110,194956964><deletion,194956965,194961213><inverted tandem duplication,194961214,194964961>
+chr1	197507237	197513522	translocation copy-paste	<translocation copy-paste,SORC:197513522-197516860,DEST:197507237,forward>
+chr1	197750180	197758327	tandem duplication;deletion;inversion;inverted tandem duplication	<tandem duplication,197750180,197751673><deletion,197751674,197754328><inversion,197754329,197758079><inverted tandem duplication,197758080,197758327>
+chr1	198783595	198795470	translocation copy-paste	<translocation copy-paste,SORC:198783595-198788008,DEST:198795470,forward>
+chr1	199151082	199162002	inversion;inverted tandem duplication;deletion;tandem duplication	<inversion,199151082,199151349><inverted tandem duplication,199151350,199154648><deletion,199154649,199158616><tandem duplication,199158617,199162002>
+chr1	200969388	200980451	deletion;inversion;tandem duplication;inverted tandem duplication	<deletion,200969388,200972179><inversion,200972180,200975339><tandem duplication,200975340,200977596><inverted tandem duplication,200977597,200980451>
+chr1	202207083	202227064	translocation copy-paste	<translocation copy-paste,SORC:202207083-202211304,DEST:202227064,forward>
+chr1	204137976	204142206	tandem duplication	<tandem duplication,204137976,204142206>
+chr1	204294863	204304747	inversion;deletion;inverted tandem duplication	<inversion,204294863,204295572><deletion,204295573,204300427><inverted tandem duplication,204300428,204304747>
+chr1	204383384	204393875	tandem duplication;inversion;deletion;inverted tandem duplication	<tandem duplication,204383384,204383974><inversion,204383975,204389361><deletion,204389362,204391502><inverted tandem duplication,204391503,204393875>
+chr1	207477646	207483152	translocation copy-paste	<translocation copy-paste,SORC:207483152-207486510,DEST:207477646,reverse>
+chr1	208372821	208380226	inversion;tandem duplication;deletion;inverted tandem duplication	<inversion,208372821,208374118><tandem duplication,208374119,208376395><deletion,208376396,208378933><inverted tandem duplication,208378934,208380226>
+chr1	208530249	208536275	deletion;inversion	<deletion,208530249,208533018><inversion,208533019,208536275>
+chr1	209337051	209345324	deletion;tandem duplication	<deletion,209337051,209343059><tandem duplication,209343060,209345324>
+chr1	209809789	209816585	inverted tandem duplication;tandem duplication;inversion;deletion	<inverted tandem duplication,209809789,209811790><tandem duplication,209811791,209812382><inversion,209812383,209814855><deletion,209814856,209816585>
+chr1	210869038	210875539	deletion;inversion;tandem duplication	<deletion,210869038,210870135><inversion,210870136,210873636><tandem duplication,210873637,210875539>
+chr1	211073641	211089087	inversion;deletion;tandem duplication;inverted tandem duplication	<inversion,211073641,211075682><deletion,211075683,211080649><tandem duplication,211080650,211085242><inverted tandem duplication,211085243,211089087>
+chr1	211469665	211474112	inverted tandem duplication;deletion	<inverted tandem duplication,211469665,211469867><deletion,211469868,211474112>
+chr1	212427643	212432210	tandem duplication	<tandem duplication,212427643,212432210>
+chr1	212533077	212541345	deletion;tandem duplication;inversion;inverted tandem duplication	<deletion,212533077,212535756><tandem duplication,212535757,212536894><inversion,212536895,212539875><inverted tandem duplication,212539876,212541345>
+chr1	213401727	213406717	deletion;inversion	<deletion,213401727,213403508><inversion,213403509,213406717>
+chr1	214099345	214105801	deletion;inversion;tandem duplication	<deletion,214099345,214099723><inversion,214099724,214104710><tandem duplication,214104711,214105801>
+chr1	214237453	214246335	tandem duplication;deletion;inverted tandem duplication	<tandem duplication,214237453,214240682><deletion,214240683,214244804><inverted tandem duplication,214244805,214246335>
+chr1	217158985	217164927	inversion;deletion;tandem duplication	<inversion,217158985,217160933><deletion,217160934,217164811><tandem duplication,217164812,217164927>
+chr1	218275255	218280184	deletion;tandem duplication	<deletion,218275255,218278527><tandem duplication,218278528,218280184>
+chr1	218415599	218425261	inverted tandem duplication;inversion;tandem duplication	<inverted tandem duplication,218415599,218418684><inversion,218418685,218422086><tandem duplication,218422087,218425261>
+chr1	218872017	218878007	tandem duplication;inversion	<tandem duplication,218872017,218873685><inversion,218873686,218878007>
+chr1	219489871	219494757	inverted tandem duplication	<inverted tandem duplication,219489871,219494757>
+chr1	219948267	219967890	translocation copy-paste	<translocation copy-paste,SORC:219967890-219972372,DEST:219948267,forward>
+chr1	220176389	220184669	tandem duplication;deletion	<tandem duplication,220176389,220179655><deletion,220179656,220184669>
+chr1	220426818	220435189	tandem duplication;inversion;deletion	<tandem duplication,220426818,220428486><inversion,220428487,220433274><deletion,220433275,220435189>
+chr1	220834745	220839546	inverted tandem duplication	<inverted tandem duplication,220834745,220839546>
+chr1	220848882	220852758	tandem duplication	<tandem duplication,220848882,220852758>
+chr1	220986117	221001641	translocation copy-paste	<translocation copy-paste,SORC:220986117-220990968,DEST:221001641,reverse>
+chr1	221123675	221134185	inverted tandem duplication;deletion;tandem duplication	<inverted tandem duplication,221123675,221125063><deletion,221125064,221130270><tandem duplication,221130271,221134185>
+chr1	221215271	221226700	deletion;tandem duplication;inversion;inverted tandem duplication	<deletion,221215271,221217944><tandem duplication,221217945,221218532><inversion,221218533,221223516><inverted tandem duplication,221223517,221226700>
+chr1	224317802	224320341	translocation copy-paste	<translocation copy-paste,SORC:224320341-224326404,DEST:224317802,forward>
+chr1	224396629	224404844	inversion;deletion;tandem duplication	<inversion,224396629,224399805><deletion,224399806,224403294><tandem duplication,224403295,224404844>
+chr1	224671696	224676113	inverted tandem duplication	<inverted tandem duplication,224671696,224676113>
+chr1	224691703	224698395	inversion;deletion	<inversion,224691703,224696695><deletion,224696696,224698395>
+chr1	226809797	226814241	inverted tandem duplication	<inverted tandem duplication,226809797,226814241>
+chr1	227671125	227685921	tandem duplication;deletion;inversion;inverted tandem duplication	<tandem duplication,227671125,227673039><deletion,227673040,227678170><inversion,227678171,227682204><inverted tandem duplication,227682205,227685921>
+chr1	230220175	230234599	translocation copy-paste	<translocation copy-paste,SORC:230234599-230236804,DEST:230220175,forward>
+chr1	231221830	231227856	inverted tandem duplication;deletion	<inverted tandem duplication,231221830,231222971><deletion,231222972,231227856>
+chr1	232622377	232627811	translocation copy-paste	<translocation copy-paste,SORC:232627811-232631258,DEST:232622377,reverse>
+chr1	232957665	232967207	inverted tandem duplication;inversion;deletion;tandem duplication	<inverted tandem duplication,232957665,232960621><inversion,232960622,232960820><deletion,232960821,232965900><tandem duplication,232965901,232967207>
+chr1	233405563	233409870	deletion;inversion	<deletion,233405563,233409461><inversion,233409462,233409870>
+chr1	234927200	234930238	inverted tandem duplication	<inverted tandem duplication,234927200,234930238>
+chr1	235142616	235149313	translocation copy-paste	<translocation copy-paste,SORC:235149313-235152750,DEST:235142616,forward>
+chr1	235737812	235749849	translocation copy-paste	<translocation copy-paste,SORC:235749849-235752935,DEST:235737812,forward>
+chr1	235880351	235884259	inverted tandem duplication	<inverted tandem duplication,235880351,235884259>
+chr1	237987859	237993526	inverted tandem duplication;deletion;tandem duplication	<inverted tandem duplication,237987859,237989852><deletion,237989853,237992958><tandem duplication,237992959,237993526>
+chr1	238896774	238907843	inverted tandem duplication;inversion;deletion;tandem duplication	<inverted tandem duplication,238896774,238897374><inversion,238897375,238901872><deletion,238901873,238903494><tandem duplication,238903495,238907843>
+chr1	239494931	239504032	inverted tandem duplication;deletion;inversion	<inverted tandem duplication,239494931,239498671><deletion,239498672,239502599><inversion,239502600,239504032>
+chr1	240035074	240044767	inverted tandem duplication;deletion	<inverted tandem duplication,240035074,240039076><deletion,240039077,240044767>
+chr1	240433889	240440186	tandem duplication;deletion;inverted tandem duplication	<tandem duplication,240433889,240435467><deletion,240435468,240439990><inverted tandem duplication,240439991,240440186>
+chr1	241022790	241028235	inverted tandem duplication;inversion;tandem duplication;deletion	<inverted tandem duplication,241022790,241023606><inversion,241023607,241026661><tandem duplication,241026662,241027993><deletion,241027994,241028235>
+chr1	241720543	241725200	inverted tandem duplication	<inverted tandem duplication,241720543,241725200>
+chr1	242200551	242205928	inverted tandem duplication;tandem duplication;deletion;inversion	<inverted tandem duplication,242200551,242201360><tandem duplication,242201361,242201800><deletion,242201801,242204266><inversion,242204267,242205928>
+chr1	242537416	242541917	tandem duplication;deletion	<tandem duplication,242537416,242539338><deletion,242539339,242541917>
+chr1	243366174	243371651	inverted tandem duplication	<inverted tandem duplication,243366174,243371651>
+chr1	243678713	243690037	deletion;inversion	<deletion,243678713,243684593><inversion,243684594,243690037>
+chr1	244948813	244964629	translocation copy-paste	<translocation copy-paste,SORC:244964629-244966763,DEST:244948813,reverse>
+chr1	245591200	245599352	inversion;inverted tandem duplication	<inversion,245591200,245598085><inverted tandem duplication,245598086,245599352>
+chr1	246451187	246463608	translocation copy-paste	<translocation copy-paste,SORC:246463608-246468629,DEST:246451187,forward>
+chr1	247410100	247421212	tandem duplication;deletion;inversion;inverted tandem duplication	<tandem duplication,247410100,247410991><deletion,247410992,247414942><inversion,247414943,247419159><inverted tandem duplication,247419160,247421212>
+chr1	247431806	247439144	inversion;deletion;tandem duplication	<inversion,247431806,247434248><deletion,247434249,247437346><tandem duplication,247437347,247439144>
+chr1	248318761	248322652	inverted tandem duplication;inversion;deletion	<inverted tandem duplication,248318761,248319018><inversion,248319019,248322376><deletion,248322377,248322652>
