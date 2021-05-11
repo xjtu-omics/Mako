@@ -513,7 +513,7 @@ else:
     if option == "config":
         parser.add_option("-b", dest='bam', help='BAM file to config')
         parser.add_option("-n", type=int, dest="num", help="Number of samples used for estimation")
-        parser.add_option("-m", type=int, dest="mapq", help="Number of samples used for estimation")
+        parser.add_option("-m", type=int, dest="mapq", help="Minimum mapping quality for aligned read-pairs", default=20)
         parser.add_option("-f", dest="fai", help="Index of reference file")
         parser.add_option("-w", dest='out', help='Working directory')
         parser.add_option("-s", dest="name", help="Name of the sample")

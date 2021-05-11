@@ -7,7 +7,7 @@ Mako is a bottom-up guided model-free CSV detection tool. It first builds a muta
 
 <img src="https://github.com/xjtu-omics/Mako/blob/master/supports/Mako_workflow.png" alt="mako_workflow" width="80%" height="80%" align=center/>
 
-Please check the [wiki](https://github.com/jiadong324/Mako/wiki) page for more details.
+Please check the [wiki](https://github.com/xjtu-omics/Mako/wiki) page for more details.
 
 ## Install and run
 
