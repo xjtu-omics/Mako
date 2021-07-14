@@ -85,7 +85,9 @@ public class CFSPM {
      */
     public SequentialPatterns runAlgorithm(SequenceDatabase database, String rawPatternOut, String mergedPatternOut, BufferedWriter svRegionWriter, String faFilePath) throws IOException{
         MemoryLogger.getInstance().reset();
-        
+
+        System.out.println("\n********************* Calling from graph *********************\n");
+
         this.database = database;
         startTime = System.currentTimeMillis();
                         
@@ -659,7 +661,7 @@ public class CFSPM {
         r.append("\nMax memory used (mb) : " );
         r.append(MemoryLogger.getInstance().getMaxMemory());        
         r.append('\n');
-        r.append("===================================================\n");
+        r.append("===============================================\n");
         System.out.println(r.toString());
     }
     

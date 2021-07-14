@@ -9,9 +9,14 @@ Mako is a bottom-up guided model-free CSV detection tool. It first builds a muta
 
 Please check the [wiki](https://github.com/xjtu-omics/Mako/wiki) page for more details.
 
+## License
+
+SVision is free for non-commercial use by academic, government, and non-profit/not-for-profit institutions. A commercial version of the software is available and licensed through Xi’an Jiaotong University.
+For more information, please contact with Jiadong Lin (jiadong324@stu.xjtu.edu.cn) or Kai Ye (kaiye@xjtu.edu.cn).
+
 ## Install and run
 
-Mako requires Java JDK (>=1.8), we provide a prebuilt JAR package **Mako.jar** for directly usage. See [Release](https://github.com/jiadong324/Mako/releases).
+Mako requires Java JDK (>=1.8), we provide a prebuilt JAR package **Mako.jar** for directly usage. 
 
 **NOTE:** All results from the paper is made by **Mako.jar**, which is the beta version release.
 
@@ -27,11 +32,15 @@ Mako requires Java JDK (>=1.8), we provide a prebuilt JAR package **Mako.jar** f
 ```
 # Configuration
 python ParseMako.py config -b sample.bam -n 30000 -w ./working_dir/ -s sampleName -f /path/to/ref.fa.fai
+```
 
+```
 # Detection
 java -jar Mako.jar -R /path/to/ref.fa -F /path/to/sampleName.mako.cfg
+```
 
-# Convert to VCF format
+```
+# Convert to VCF format (optional)
 python ParseMako.py tovcf -m sampleName_mako_calls.txt -o sampleName_mako.vcf -r /path/to/ref.fa -s sampleName
 ```
 
@@ -39,7 +48,7 @@ python ParseMako.py tovcf -m sampleName_mako_calls.txt -o sampleName_mako.vcf -r
 
 ```
 # Create configuration file
-python /path/to/process.py config -b NA19240.30X.chr20.1000K-2000K.bam -N 30000 -w ./working_dir/ -s NA19240 -f /ref.fa.fai
+python ParseMako.py config -b NA19240.30X.chr20.1000K-2000K.bam -n 30000 -w ./working_dir/ -s NA19240 -f /demo.fa.fai
 
 # Run Mako
 java -jar /path/to/Mako.jar -R /path/to/GRCh38_full_analysis_set_plus_decoy_hla.fa -F /path/to/NA19240.mako.cfg

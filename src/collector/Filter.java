@@ -43,14 +43,14 @@ public class Filter {
 
     }
 
-    public Set<String> runFilter(String bamFile, String fastaIndexFile, String chrom, Map<String, Float> signalSummary) throws IOException{
+    public Set<String> runFilter(String bamFile, String fastaIndexFile, String chrom, int chromStart, int chromEnd, Map<String, Float> signalSummary) throws IOException{
 
         int windowStart = 0;
         int windowEnd = 0;
 
         readFaIdxFile(fastaIndexFile);
 
-        System.out.println("\nStart filtering background noise from BAM ...\n");
+        System.out.println("\n********************* Filtering background noise *********************\n");
         FileReader myFileReader = new FileReader();
         final SamReader samReader = myFileReader.openBamFile(bamFile, ValidationStringency.SILENT, false);
 
@@ -64,7 +64,7 @@ public class Filter {
 
         int totalDiscRps = 0;
 
-        // access user specified region
+        // Processing single chrom
         if (chrom != null){
 
             SAMFileHeader samFileHeader = samReader.getFileHeader();
@@ -74,11 +74,23 @@ public class Filter {
             int refSequenceLength = refSequenceRecord.getSequenceLength();
             int nWindows = refSequenceLength / readDepthContainerBuffer;
 
+            // Added V1.2, processing specific region in chrom
+            boolean isSingleRegion = false;
+            if (chromStart != -1 && chromEnd != -1) {
+                nWindows = 1;
+                windowStart = chromStart;
+                isSingleRegion = true;
+            }
+
+
             for (int i = 0; i < nWindows; i++){
                 discRps = new HashMap<>();
                 rpTracker = new HashMap<>();
 
                 windowEnd = windowStart + readDepthContainerBuffer;
+                if (isSingleRegion) {
+                    windowEnd = chromEnd;
+                }
                 iterator = samReader.query(chrom, windowStart, windowEnd, false);
 
                 analysisAlignment(iterator, rpTracker, discRps, discRpSigTypeCount);
@@ -94,19 +106,24 @@ public class Filter {
 
             }
 
-            // process remaining alignment in BAM
-            discRps = new HashMap<>();
-            rpTracker = new HashMap<>();
+            if (!isSingleRegion) {
+                // process remaining alignment in BAM
+                discRps = new HashMap<>();
+                rpTracker = new HashMap<>();
 
-            iterator = samReader.query(chrom, windowStart, refSequenceLength, false);
-            analysisAlignment(iterator, rpTracker, discRps, discRpSigTypeCount);
-            totalDiscRps += rpTracker.size();
+                iterator = samReader.query(chrom, windowStart, refSequenceLength, false);
+                analysisAlignment(iterator, rpTracker, discRps, discRpSigTypeCount);
+                totalDiscRps += rpTracker.size();
 
-            int failedRps = discRpTest(discRps, signalSummary, filteredDiscRpNames);
+                int failedRps = discRpTest(discRps, signalSummary, filteredDiscRpNames);
 
-            System.out.println("[Filter] processed region: [" + windowStart + ", " + refSequenceLength + "] " + "# failed rps: " + failedRps);
+                System.out.println("[Filter] processed region: [" + windowStart + ", " + refSequenceLength + "] " + "# failed rps: " + failedRps);
+            }
+
 
         }
+
+        // Processing whole genome
         else{
             for (int i = 0;i < length; i ++){
                 discRps = new HashMap<>();

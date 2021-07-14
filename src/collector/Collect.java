@@ -93,6 +93,8 @@ public class Collect {
         oriChannel = new SignalParser(maxRpDist, "ori", abnormalSigOut);
         breakendChannel = new SignalParser(maxRpDist, "bnd", abnormalSigOut);
 
+        System.out.println("\n********************* Collecting graph nodes *********************\n");
+
         // Create output header
         if (!superitemOutPath.isEmpty()){
             nodeWriter = new BufferedWriter(new FileWriter(superitemOutPath));
@@ -127,10 +129,10 @@ public class Collect {
         utils.FileReader myFileReader = new FileReader();
         final SamReader samReader = myFileReader.openBamFile(bamFile, ValidationStringency.SILENT, false);
 
-        System.out.println("\nStart extracting nodes from alignments ...\n");
 
-        // access user specified region
-        if (chrom != null){
+
+        // Processing single chrom
+        if (chrom != null) {
 
             SAMFileHeader samFileHeader = samReader.getFileHeader();
             
@@ -138,26 +140,29 @@ public class Collect {
             SAMSequenceRecord refSequenceRecord = sequenceDictionary.getSequence(chrom);
             int refSequenceLength = refSequenceRecord.getSequenceLength();           
             int nWindows = refSequenceLength / readDepthContainerBuffer;
-            
-                  
-            
-            if (regionStart != 0 && regionEnd != 0){
+
+
+            boolean isSingleRegion = false;
+            if (regionStart != -1 && regionEnd != -1){
                 refSequenceLength = regionEnd - regionStart + 1;
-                if (refSequenceLength <= readDepthContainerBuffer){
-                    nWindows = 1;
-                    readDepthContainerBuffer = refSequenceLength;
-                }else{
-                    nWindows = refSequenceLength/readDepthContainerBuffer;
-                }
+//                if (refSequenceLength <= readDepthContainerBuffer){
+//                    nWindows = 1;
+//                    readDepthContainerBuffer = refSequenceLength;
+//                }else{
+//                    nWindows = refSequenceLength/readDepthContainerBuffer;
+//                }
                 windowStart = regionStart;
-                
-                
+                nWindows = 1;
+                isSingleRegion = true;
             }
             
             int[] readDepthPreStepBuffer = new int[readDepthContainerBuffer];
             
             for (int i = 0; i < nWindows; i++){  
-                windowEnd = windowStart + readDepthContainerBuffer;                 
+                windowEnd = windowStart + readDepthContainerBuffer;
+                if (isSingleRegion){
+                    windowEnd = regionEnd;
+                }
                 SAMRecordIterator iterator = samReader.query(chrom, windowStart, windowEnd, false);               
                 
                 analysisAlignment(iterator, qnames, windowStart, chrom);
@@ -178,21 +183,24 @@ public class Collect {
                     breakendChannel.createBreakEndCandidates(bndWriter);
                 }
             }
-            // process remaining alignment in BAM
-            SAMRecordIterator iterator = samReader.query(chrom, windowStart, refSequenceLength, false);
-            analysisAlignment(iterator, qnames, windowStart, chrom);
-            processRemainingSignals();
-            int curWindowNodeCount = assignReadDepthAndCountSuperItem(windowStart, readDepthContainerBuffer, readDepthPreStepBuffer);
+            if (!isSingleRegion) {
+                // process remaining alignment in BAM
+                SAMRecordIterator iterator = samReader.query(chrom, windowStart, refSequenceLength, false);
+                analysisAlignment(iterator, qnames, windowStart, chrom);
+                processRemainingSignals();
+                int curWindowNodeCount = assignReadDepthAndCountSuperItem(windowStart, readDepthContainerBuffer, readDepthPreStepBuffer);
 
-            nodeNum += curWindowNodeCount;
-            System.out.println("[Collect] processed region: [" + windowStart + ", " + refSequenceLength + "] " + "#nodes: " + curWindowNodeCount);
-            
-            
-            writeAllSuperItems();
-            if (bndWriter != null) {
-                breakendChannel.createBreakEndCandidates(bndWriter);
-                bndWriter.close();
+                nodeNum += curWindowNodeCount;
+                System.out.println("[Collect] processed region: [" + windowStart + ", " + refSequenceLength + "] " + "#nodes: " + curWindowNodeCount);
+
+
+                writeAllSuperItems();
+                if (bndWriter != null) {
+                    breakendChannel.createBreakEndCandidates(bndWriter);
+                    bndWriter.close();
+                }
             }
+
 
            
         } 

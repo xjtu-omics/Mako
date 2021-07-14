@@ -34,7 +34,7 @@ public class SequenceDatabase {
      */
     public void loadSequencesFromFile(String superitemFilePath, Double minAf, int minWeight) throws IOException{
 //        System.out.println("Start loading mutational database.....");
-        System.out.println("\nLoading node and create signal graph ...");
+        System.out.println("\n***************** Create graph *****************\n");
         
         List<List<Node>> superitemInput = new ArrayList<>();
         Map<String, Integer> seqChromMap = new HashMap<>();
@@ -188,17 +188,16 @@ public class SequenceDatabase {
     }
     
     private void printDatabaseStats(){
-        System.out.println("\n============  Sequence Database STATS ==========");
-	System.out.println("Number of sequences : " + sequences.size());
+        System.out.println("\n============  Graph summary ==========");
+	    System.out.println("Number of graphs : " + sequences.size());
         long size = 0;
         for(Sequence sequence : sequences){
             size += sequence.size();
             
         }
         double meansize = ((float)size) / ((float)sequences.size());
-        System.out.println("Average sequence size : " + meansize);
-        System.out.println("Time: " + (endTime - startTime) + "ms");
-        System.out.println("================================================\n");
+        System.out.println("Average graph size : " + meansize);
+        System.out.println("==========================================\n");
         
     }
 }
