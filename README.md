@@ -17,8 +17,7 @@ For more information, please contact with Jiadong Lin (jiadong324@stu.xjtu.edu.c
 ## Install and run
 
 Mako requires Java JDK (>=1.8), we provide a prebuilt JAR package **Mako.jar** for directly usage. 
-
-**NOTE:** All results from the paper is made by **Mako.jar**, which is the beta version release.
+Please check [release](https://github.com/xjtu-omics/Mako/releases).
 
 ### Dependency
 
