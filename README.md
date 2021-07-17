@@ -14,6 +14,18 @@ Please check the [wiki](https://github.com/xjtu-omics/Mako/wiki) page for more d
 SVision is free for non-commercial use by academic, government, and non-profit/not-for-profit institutions. A commercial version of the software is available and licensed through Xi’an Jiaotong University.
 For more information, please contact with Jiadong Lin (jiadong324@stu.xjtu.edu.cn) or Kai Ye (kaiye@xjtu.edu.cn).
 
+## Citation
+
+Please cite the original paper if you are using the results and software.
+
+Jiadong Lin, Xiaofei Yang, Walter Kosters, Tun Xu, Yanyan Jia, Songbo Wang, Qihui Zhu, Mallory Ryan, Li Guo, Chengsheng Zhang, Charles Lee, Scott E. Devine, Evan E. Eichler, Kai Ye,
+Mako: A Graph-based Pattern Growth Approach to Detect Complex Structural Variants,
+Genomics, Proteomics & Bioinformatics,
+2021
+
+[*Mako: A Graph-based Pattern Growth Approach to Detect Complex Structural Variants*](https://www.sciencedirect.com/science/article/pii/S1672022921001431)
+
+
 ## Install and run
 
 Mako requires Java JDK (>=1.8), we provide a prebuilt JAR package **Mako.jar** for directly usage. 
@@ -58,9 +70,6 @@ java -jar /path/to/Mako.jar -R /path/to/GRCh38_full_analysis_set_plus_decoy_hla.
 1. Please make sure the reference used for running Mako is identical to the alignment one.
 2. ...
 
-
-## Citation
-The manuscript is accepted by Genomics Proteomics Bioinformatics, which will be online soon.
 
 ## Contact
 
