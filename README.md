@@ -52,7 +52,7 @@ java -jar Mako.jar -R /path/to/ref.fa -F /path/to/sampleName.mako.cfg
 
 ```
 # Convert to VCF format (optional)
-python ParseMako.py tovcf -m sampleName_mako_calls.txt -o sampleName_mako.vcf -r /path/to/ref.fa -s sampleName
+python ParseMako.py tovcf -m sampleName_mako_calls.txt -o sampleName_mako.vcf
 ```
 
 ### Run demo data
