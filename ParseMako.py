@@ -9,7 +9,7 @@
 '''
 
 
-import sys
+import sys, os
 
 from optparse import OptionParser
 import pysam
@@ -21,6 +21,7 @@ import re
 parser = OptionParser()
 CHROMS = ["chr1", "chr2", "chr3", "chr4", "chr5", "chr6", "chr7", "chr8", "chr9", "chr10", "chr11", "chr12", "chr13", "chr14", "chr15", "chr16",
           "chr17", "chr18", "chr19", "chr20", "chr21", "chr22", "chrX"]
+HEADER = ("chr", "start", "end", "type", "filter", "info", "pattern", "weight")
 
 class Interval:
     def __init__(self, chrom, start, end, pattern, sample, interval_str):
@@ -75,11 +76,10 @@ def mako_to_vcf(mako, out):
 
     print("Convert to VCF ...")
 
-    names = ("chr", "start", "end", "type", "filter", "info", "pattern", "weight")
 
     call_list = list()
 
-    calls = pd.read_csv(mako, header=None, sep="\t", names=names)
+    calls = pd.read_csv(mako, header=None, sep="\t", names=HEADER)
 
     for idx, row in calls.iterrows():
         info_tokens = row["info"].split(";")
@@ -145,114 +145,6 @@ def mako_to_vcf(mako, out):
         sorted_df_calls.to_csv(vcf, sep="\t", index=False)
 
 
-def merge_multiple_makos(sample_files, mako_dir, out_file, max_dist, len_prop):
-    '''
-    Merge multiple Mako call set
-    :param sample_files:
-    :param mako_dir:
-    :param out_file:
-    :param max_dist:
-    :param len_prop:
-    :return:
-    '''
-
-    intervals = []
-    for line in open(sample_files, "r"):
-        file_name = line.strip()
-        mako_file_path = mako_dir + file_name
-        sample_name = file_name.split(".")[0]
-
-        cur_sample_sv_num = 0
-
-        for line in open(mako_file_path, "r"):
-            tmp = line.strip().split("\t")
-            chrom = tmp[0]
-            start = int(tmp[1])
-            end = int(tmp[2])
-
-            cur_sample_sv_num += 1
-            sv_info_tokens = tmp[4].split(';')
-            pattern_str = ""
-            for token in sv_info_tokens:
-                if token.split('=')[0] == 'Pattern':
-                    pattern_str = token.split('=')[1]
-                    break
-
-            interval_str = "{0},{1},{2}".format(chrom, start, end)
-
-            cur_interval = Interval(chrom, start, end, pattern_str, sample_name, interval_str)
-
-            intervals = add_interval(intervals, cur_interval, max_dist, len_prop)
-
-        # print sample_name + ", " + str(cur_sample_sv_num) + " SVs processed .."
-        print("Merge sample: {0} total entries: {1}".format(sample_name, len(intervals)))
-
-    writer = open(out_file, "w")
-
-    for interval in intervals:
-        writer.write(interval.toString() + "\n")
-    writer.close()
-
-
-def add_interval(intervals, new_interval, max_dist, len_prop):
-    new_intervals = []
-
-    num = len(intervals)
-
-    if num == 0:
-        new_intervals.append(new_interval)
-        return new_intervals
-
-    if new_interval.end < intervals[0].start or new_interval.start > intervals[num - 1].end:
-
-        if new_interval.end < intervals[0].start:
-            new_intervals.append(new_interval)
-
-        new_intervals.extend(intervals)
-
-        if new_interval.start > intervals[num - 1].end:
-            new_intervals.append(new_interval)
-
-        return new_intervals
-
-    for i in range(len(intervals)):
-        ele = intervals[i]
-        overlap = ele.overlap(new_interval, max_dist, len_prop)
-        # Overlapped
-        if not overlap:
-            new_intervals.append(ele)
-
-            # check if given interval lies between two intervals
-            if i < num and new_interval.start > intervals[i].end and new_interval.end < intervals[i + 1].start:
-                new_intervals.append(new_interval)
-
-            continue
-
-        new_start = min(ele.start, new_interval.start)
-        new_pattern = ele.pattern
-        new_end = max(ele.end, new_interval.end)
-        new_sample = ele.sample
-        new_interval_str = ele.interval
-
-        while i < num and overlap:
-            new_end = max(intervals[i].end, new_interval.end)
-            new_pattern += ";" + new_interval.pattern
-            new_sample += ";" + new_interval.sample
-            new_interval_str += ";" + new_interval.interval
-            if i == num - 1:
-                overlap = False
-            else:
-                overlap = intervals[i + 1].overlap(new_interval, max_dist, len_prop)
-
-            i += 1
-
-        i -= 1
-
-        new_intervals.append(
-            Interval(new_interval.chrom, new_start, new_end, new_pattern, new_sample, new_interval_str))
-
-    return new_intervals
-
 
 def mako_filter(in_file, out_file, cxs, format):
     '''
@@ -270,8 +162,7 @@ def mako_filter(in_file, out_file, cxs, format):
         all_calls += 1
         tmp = line.strip().split("\t")
         cx_score = int(tmp[5].split(";")[0].split("=")[1])
-        # if cx_score not in scores:
-        #     scores.append(cx_score)
+
         if cx_score > cxs:
             csvs_num += 1
             if format == "mako":
@@ -283,6 +174,114 @@ def mako_filter(in_file, out_file, cxs, format):
     print("Number of calls after filtering: ", csvs_num)
     writer.close()
     # print(np.percentile(scores, 25))
+
+##TODO: Repeat annotation of Mako calls
+'''
+def repeat_annotation(mako, trf_path, rmsk_path, bedtools_path, outdir):
+
+    file_prefix = ".".join(os.path.basename(mako).split(".")[0])
+
+    mako_bed = os.path.join(outdir, '{0}.bed'.format(file_prefix)
+    df_mako = pd.read_csv(mako, header=None, sep="\t", names=HEADER)
+    mako_sv_list = []
+    for idx, row in df_mako.iterrows():
+        mako_sv_list.append(row['chr'], row['start'], row['end'])
+    df_mako_sv_bed = pd.DataFrame(mako_sv_list)
+    df_mako_sv_bed.to_csv(mako_bed, header=False, index=False, sep='\t')
+
+    overlap_repeat_elements(mako_bed, bedtools_path, outdir)
+
+    rmsk_ovlp_path = os.path.join(outdir, '{0}.rmsk.bed'.format(file_prefix))
+    trf_ovlp_path = os.path.join(outdir, '{0}.trf.bed'.format(file_prefix))
+
+    assign_reps(bed, rmsk_ovlp_path, trf_ovlp_path, bed_prefix, outdir)
+
+def overlap_repeat_elements(bed, trf_path, rmsk_path, bedtools_path, outdir):
+    print("Overlapping SV and repeat elements ...")
+    bed_prefix = ".".join(os.path.basename(bed).split(".")[0])
+    rmsk_cmd = '{0} intersect -wa -wb -a {1} -b {2} > {3}/{4}.rmsk.bed'.format(bedtools_path, bed, rmsk_path, outdir, bed_prefix)
+    os.system(rmsk_cmd)
+
+    trf_cmd = '{0} intersect -wa -wb -a {1} -b {2} > {3}/{4}.trf.bed'.format(bedtools_path, bed, trf_path, outdir, bed_prefix)
+    os.system(trf_cmd)
+
+def assign_reps(svs, rmsk_overlaps, trf_overlaps, out_prefix, outdir):
+    annot_out = outdir + "/{0}.RepAnnot.bed".format(out_prefix)
+    print("Assign repeat element to SV ...")
+    df_rmsk = pd.read_csv(rmsk_overlaps, sep="\t", usecols=[0,1,2,3,4,5,6,7,8,10,11,12,13], names=['chrom', 'start', 'end', 'svlen',
+                                                          'type', 'hap', 'id', 'af', 'sr', 'rpstart', 'rpend', 'rpsubtype', 'rptype'])
+
+    annot_by_sv = {}
+
+    for idx, row in df_rmsk.iterrows():
+        if row['rptype'] == 'Simple_repeat':
+            continue
+        sv_id = "{0}-{1}-{2}".format(row['chrom'], row['start'], row['end'])
+        overlap_size = overlap(int(row['start']), int(row['end']), int(row['rpstart']), int(row['rpend']))
+        if sv_id in annot_by_sv:
+            annot_by_sv[sv_id].append((row['rpsubtype'], row['rptype'], overlap_size))
+        else:
+            annot_by_sv[sv_id] = [(row['rpsubtype'], row['rptype'], overlap_size)]
+
+
+    df_trf = pd.read_csv(trf_overlaps, sep="\t", usecols=[0,1,2,3,4,5,6,7,8,10,11,12], names=['chrom', 'start', 'end', 'svlen',
+                                                          'type', 'hap', 'id', 'af', 'sr', 'rpstart', 'rpend', 'motif'])
+
+    for idx, row in df_trf.iterrows():
+        sv_id = "{0}-{1}-{2}".format(row['chrom'], row['start'], row['end'])
+        overlap_size = overlap(int(row['start']), int(row['end']), int(row['rpstart']), int(row['rpend']))
+        subtype = "STR"
+        if len(row['motif']) >= 7:
+            subtype = 'VNTR'
+
+        if sv_id not in annot_by_sv:
+            annot_by_sv[sv_id] = [(subtype, 'Simple_repeat', overlap_size)]
+        else:
+            annot_by_sv[sv_id].append((subtype, 'Simple_repeat', overlap_size))
+
+    df_svs = pd.read_csv(svs, sep="\t", names=['chrom', 'start', 'end', 'svlen', 'svtype', 'hap', 'caller-id', 'caller-af', 'caller-sr'])
+
+    sv_annots = list()
+    count_by_rptype = {}
+    for idx, row in df_svs.iterrows():
+        if row['svtype'] == 'NA':
+            continue
+        sv_id = "{0}-{1}-{2}".format(row['chrom'], row['start'], row['end'])
+        rpsubtype = 'None'
+        rptype = 'None'
+        rep_overlaps = 0
+        if sv_id in annot_by_sv:
+            annots = annot_by_sv[sv_id]
+            if len(annots) == 1:
+                rptype = annots[0][1]
+                rpsubtype = annots[0][0]
+                rep_overlaps = annots[0][2]
+            else:
+                sorted_annots_by_size = sorted(annots, key=lambda x:x[2], reverse=True)
+                rptype = sorted_annots_by_size[0][1]
+                rpsubtype = sorted_annots_by_size[0][0]
+                rep_overlaps = sorted_annots_by_size[0][2]
+        msk_pcrt = 100 * rep_overlaps / (int(row['end']) - int(row['start']))
+
+        this_sv = row.tolist()
+        this_sv.extend([round(msk_pcrt, 2), rpsubtype, rptype])
+
+        sv_annots.append(this_sv)
+
+        if rptype in count_by_rptype:
+            count_by_rptype[rptype] += 1
+        else:
+            count_by_rptype[rptype] = 1
+
+
+    df_sv_annots = pd.DataFrame(sv_annots, columns=['chrom', 'start', 'end', 'svlen', 'svtype', 'hap', 'caller-id', 'caller-af', 'caller-sr', 'pcrt', 'subtype', 'rptype'])
+
+    sorter_index = dict(zip(VALID_CHROMS, range(len(VALID_CHROMS))))
+    df_sv_annots['chrom_rank'] = df_sv_annots['chrom'].map(sorter_index)
+    df_sv_annots.drop('chrom_rank', 1, inplace=True)
+    df_sv_annots.to_csv(annot_out, index=False, header=False, sep="\t")
+
+'''
 
 def not_primary(aln):
     return aln.is_supplementary or aln.is_secondary
@@ -404,13 +403,15 @@ def mako_config(bam, fai_file, num_to_check, min_mapq, out, sample):
 
     rp_lambda, genome_length = classify_rps(bam_file, fai_file, min_mapq, min_insert, max_insert)
 
-    out_str = "mean:{0}\nstdev:{1}\nreadlen:{2}\nworkDir:{3}\nbam:{4}\nname:{5}\n".format(mean, stdev, read_length, out, out + bam, sample)
+    bam_abs_path = os.path.join(out, bam)
+
+    out_str = "mean:{0}\nstdev:{1}\nreadlen:{2}\nworkDir:{3}\nbam:{4}\nname:{5}\n".format(mean, stdev, read_length, out, bam_abs_path, sample)
     for rp_type, val in rp_lambda.items():
         out_str += "{0}:{1}\n".format(rp_type, val / genome_length)
 
     print("All discordant read pairs processed!")
-
-    writer = open(out + sample + '.mako.cfg', 'w')
+    writer = open(os.path.join(out, '{0}.mako.cfg'.format(sample)), 'w')
+    
     writer.write(out_str)
     writer.close()
 
@@ -440,6 +441,8 @@ def get_read_length(cigar):
 
     return readLen
 
+## Archived code of in previous versions
+'''
 def get_mako_sub(mako, out):
 
     ind_svs = []
@@ -490,6 +493,104 @@ def get_mako_sub(mako, out):
 
     writer.close()
 
+def merge_multiple_makos(sample_files, mako_dir, out_file, max_dist, len_prop):
+    intervals = []
+    for line in open(sample_files, "r"):
+        file_name = line.strip()
+        mako_file_path = mako_dir + file_name
+        sample_name = file_name.split(".")[0]
+
+        cur_sample_sv_num = 0
+
+        for line in open(mako_file_path, "r"):
+            tmp = line.strip().split("\t")
+            chrom = tmp[0]
+            start = int(tmp[1])
+            end = int(tmp[2])
+
+            cur_sample_sv_num += 1
+            sv_info_tokens = tmp[4].split(';')
+            pattern_str = ""
+            for token in sv_info_tokens:
+                if token.split('=')[0] == 'Pattern':
+                    pattern_str = token.split('=')[1]
+                    break
+
+            interval_str = "{0},{1},{2}".format(chrom, start, end)
+
+            cur_interval = Interval(chrom, start, end, pattern_str, sample_name, interval_str)
+
+            intervals = add_interval(intervals, cur_interval, max_dist, len_prop)
+
+        # print sample_name + ", " + str(cur_sample_sv_num) + " SVs processed .."
+        print("Merge sample: {0} total entries: {1}".format(sample_name, len(intervals)))
+
+    writer = open(out_file, "w")
+
+    for interval in intervals:
+        writer.write(interval.toString() + "\n")
+    writer.close()
+
+
+def add_interval(intervals, new_interval, max_dist, len_prop):
+    new_intervals = []
+
+    num = len(intervals)
+
+    if num == 0:
+        new_intervals.append(new_interval)
+        return new_intervals
+
+    if new_interval.end < intervals[0].start or new_interval.start > intervals[num - 1].end:
+
+        if new_interval.end < intervals[0].start:
+            new_intervals.append(new_interval)
+
+        new_intervals.extend(intervals)
+
+        if new_interval.start > intervals[num - 1].end:
+            new_intervals.append(new_interval)
+
+        return new_intervals
+
+    for i in range(len(intervals)):
+        ele = intervals[i]
+        overlap = ele.overlap(new_interval, max_dist, len_prop)
+        # Overlapped
+        if not overlap:
+            new_intervals.append(ele)
+
+            # check if given interval lies between two intervals
+            if i < num and new_interval.start > intervals[i].end and new_interval.end < intervals[i + 1].start:
+                new_intervals.append(new_interval)
+
+            continue
+
+        new_start = min(ele.start, new_interval.start)
+        new_pattern = ele.pattern
+        new_end = max(ele.end, new_interval.end)
+        new_sample = ele.sample
+        new_interval_str = ele.interval
+
+        while i < num and overlap:
+            new_end = max(intervals[i].end, new_interval.end)
+            new_pattern += ";" + new_interval.pattern
+            new_sample += ";" + new_interval.sample
+            new_interval_str += ";" + new_interval.interval
+            if i == num - 1:
+                overlap = False
+            else:
+                overlap = intervals[i + 1].overlap(new_interval, max_dist, len_prop)
+
+            i += 1
+
+        i -= 1
+
+        new_intervals.append(
+            Interval(new_interval.chrom, new_start, new_end, new_pattern, new_sample, new_interval_str))
+
+    return new_intervals
+'''
 script_name = sys.argv[0]
 if len(sys.argv) < 2:
     print('=======================================================')
