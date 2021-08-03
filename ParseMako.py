@@ -85,24 +85,26 @@ def mako_to_vcf(mako, out):
         info_tokens = row["info"].split(";")
         qual = info_tokens[0].split("=")[1]
         brkp_str = ""
-        supp_str = ""
         CR = 0
+        CXS = 0
         for i in range(1, len(info_tokens)):
             info = info_tokens[i]
             if "cr" in info:
                 CR = info.split("=")[1]
+            elif 'cxs' in info:
+                CXS = info.split("=")[1]
             else:
-                brkp_str += "BRK{0}={1},{2};".format(i, info.split(",")[0], info.split(",")[1])
-                supp_str += "SA{0}={1},RP{2}={3};".format(i, info.split(",")[2].split("=")[1], i, info.split(",")[3].split("=")[1])
+                brkp_str += "BRK={0}-{1},SA={2},RP={3};".format(info.split(",")[0], info.split(",")[1], info.split(",")[2].split("=")[1], info.split(",")[3].split("=")[1])
+#                 supp_str += "SA{0}={1},RP{2}={3};".format(i - 1, info.split(",")[2].split("=")[1], i - 1, info.split(",")[3].split("=")[1])
 
-        supp_str += "CR={0}".format(CR)
+        brkp_str = f"CR={CR};CXS={CXS};{brkp_str}"
 
         alt = "<SV>"
         if "," in row["type"]:
             alt = "<CSV>"
         svlen = int(row["end"]) - int(row["start"])
 
-        vcf_info_str = "END={0};SVLEN={1};SVTYPE={2};{3};{4};PATTERN={5};WEIGHT={6}".format(row["end"], svlen, row['type'], brkp_str[:-1], supp_str, row['pattern'], row['weight'])
+        vcf_info_str = "END={0};SVLEN={1};SVTYPE={2};{3};PATTERN={4};WEIGHT={5}".format(row["end"], svlen, row['type'], brkp_str[:-1], row['pattern'], row['weight'])
 
         this_call = (row["chr"], row["start"], "N", alt, qual, row["filter"], vcf_info_str)
 
